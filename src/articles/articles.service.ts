@@ -45,11 +45,11 @@ export class ArticlesService {
     return `This action returns a #${id} article`;
   }
 
-  update(id: number, updateArticleDto: UpdateArticleDto) {
-    return `This action updates a #${id} article`;
+  async update(id: string, updateArticleDto: UpdateArticleDto) {
+    return await this.articleRepository.update({ id }, updateArticleDto);
   }
 
-  remove(id: number) {
-    return `This action removes a #${id} article`;
+  async remove(id: string) {
+    return await this.articleRepository.delete(id);
   }
 }

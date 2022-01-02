@@ -9,7 +9,7 @@ import {
   Delete,
   Query,
 } from '@nestjs/common';
-import { ApiBody, ApiQuery, ApiTags } from '@nestjs/swagger';
+import { ApiBody, ApiQuery, ApiTags, ApiParam } from '@nestjs/swagger';
 import { Pagination } from 'nestjs-typeorm-paginate';
 import { ArticlesService } from './articles.service';
 import { CreateArticleDto } from './dto/create-article.dto';
@@ -42,13 +42,17 @@ export class ArticlesController {
     return this.articlesService.findOne(+id);
   }
 
+  @ApiTags('coodesh')
+  @ApiBody({ type: UpdateArticleDto })
   @Patch(':id')
   update(@Param('id') id: string, @Body() updateArticleDto: UpdateArticleDto) {
-    return this.articlesService.update(+id, updateArticleDto);
+    return this.articlesService.update(id, updateArticleDto);
   }
 
+  @ApiTags('coodesh')
+  @ApiParam({ name: 'id', required: true, type: String })
   @Delete(':id')
   remove(@Param('id') id: string) {
-    return this.articlesService.remove(+id);
+    return this.articlesService.remove(id);
   }
 }
