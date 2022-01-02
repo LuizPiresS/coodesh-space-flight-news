@@ -1,3 +1,4 @@
+import { AppController } from './app.controller';
 import { ArticlesService } from './articles/articles.service';
 import { ArticlesController } from './articles/articles.controller';
 import { Module } from '@nestjs/common';
@@ -16,7 +17,7 @@ import { Article } from './articles/entities/article.entity';
       isGlobal: true,
     }),
   ],
-  controllers: [ArticlesController],
+  controllers: [ArticlesController, AppController],
   providers: [AppService, ArticlesService],
 })
 export class AppModule {}
