@@ -41,8 +41,8 @@ export class ArticlesService {
     return paginate<Article>(queryBuilder, options);
   }
 
-  findOne(id: number) {
-    return `This action returns a #${id} article`;
+  async findOne(id: string) {
+    return await this.articleRepository.findOne(id);
   }
 
   async update(id: string, updateArticleDto: UpdateArticleDto) {

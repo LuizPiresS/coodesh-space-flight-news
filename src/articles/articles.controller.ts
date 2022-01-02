@@ -37,9 +37,11 @@ export class ArticlesController {
     return await this.articlesService.findAll({ page, limit });
   }
 
+  @ApiTags('coodesh')
+  @ApiParam({ name: 'id', required: true, type: String })
   @Get(':id')
   findOne(@Param('id') id: string) {
-    return this.articlesService.findOne(+id);
+    return this.articlesService.findOne(id);
   }
 
   @ApiTags('coodesh')
