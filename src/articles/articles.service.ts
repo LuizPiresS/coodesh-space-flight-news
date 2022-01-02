@@ -1,22 +1,44 @@
-import { InjectModel } from '@nestjs/mongoose';
-import { Injectable } from '@nestjs/common';
+import { Article } from './entities/article.entity';
+import { Injectable, Logger } from '@nestjs/common';
+import { InjectRepository } from '@nestjs/typeorm';
 import { CreateArticleDto } from './dto/create-article.dto';
 import { UpdateArticleDto } from './dto/update-article.dto';
-import { Model } from 'mongoose';
-import { Article, ArticleDocument } from './entities/article.entity';
+import { Repository } from 'typeorm';
+import { IPaginationOptions, paginate } from 'nestjs-typeorm-paginate';
+import { Pagination } from 'nestjs-typeorm-paginate';
+
 @Injectable()
 export class ArticlesService {
   constructor(
-    @InjectModel(Article.name)
-    private articleModel: Model<ArticleDocument>,
+    @InjectRepository(Article)
+    private articleRepository: Repository<Article>,
   ) {}
-  create(createArticleDto: CreateArticleDto) {
-    const article = new this.articleModel(createArticleDto);
-    return article.save();
+  async create(createArticleDto: CreateArticleDto): Promise<Article> {
+    const logger = new Logger(Article.name);
+    logger.log('Create new article');
+    return await this.articleRepository.save(createArticleDto);
   }
 
-  findAll() {
-    return `This action returns all articles`;
+  async findAll(options: IPaginationOptions): Promise<Pagination<Article>> {
+    const queryBuilder = this.articleRepository.createQueryBuilder('article');
+    queryBuilder.select([
+      'article.id',
+      'article.featured',
+      'article.title',
+      'article.url',
+      'article.imageUrl',
+      'article.newsSite',
+      'article.summary',
+      'article.publishedAt',
+      'article.launches',
+      'article.events',
+      // 'article.created_at',
+      // 'article.updated_at',
+    ]);
+
+    queryBuilder.orderBy('article.id', 'ASC');
+
+    return paginate<Article>(queryBuilder, options);
   }
 
   findOne(id: number) {

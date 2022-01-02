@@ -49,8 +49,8 @@ Nessa etapa você deverá construir uma API Restful com as melhores práticas de
 
 **Obrigatório 1** - Você deverá desenvolver as seguintes rotas:
 
-- [x] `[GET]/: ` Retornar um Status: 200 e uma Mensagem "Back-end Challenge 2021 🏅 - Space Flight News"
-- [ ] `[GET]/articles/:`   Listar todos os artigos da base de dados, utilizar o sistema de paginação para não sobrecarregar a REQUEST
+- [ ] `[GET]/:` Retornar um Status: 200 e uma Mensagem "Back-end Challenge 2021 🏅 - Space Flight News"
+- [x] `[GET]/articles/:`   Listar todos os artigos da base de dados, utilizar o sistema de paginação para não sobrecarregar a REQUEST
 - [ ] `[GET]/articles/{id}:` Obter a informação somente de um artigo
 - [x] `[POST]/articles/:` Adicionar um novo artigo
 - [ ] `[PUT]/articles/{id}:` Atualizar um artigo baseado no `id`
@@ -64,7 +64,7 @@ Nessa etapa você deverá construir uma API Restful com as melhores práticas de
 
 - [ ] **Diferencial 2** Configurar um sistema de alerta se houver algum falha durante a sincronização dos artigos;
 
-- [ ] **Diferencial 3** Descrever a documentação da API utilizando o conceito de Open API 3.0;
+- [x] **Diferencial 3** Descrever a documentação da API utilizando o conceito de Open API 3.0;
 
 - [ ] **Diferencial 4** Escrever Unit Tests para os endpoints da API;
 

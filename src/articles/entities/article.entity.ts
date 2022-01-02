@@ -1,29 +1,32 @@
-import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
-import { Document } from 'mongoose';
-export type ArticleDocument = Article & Document;
+import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
 
-@Schema()
+@Entity()
 export class Article {
-  @Prop()
+  @PrimaryGeneratedColumn('uuid')
+  id: string;
+
+  @Column()
   featured: boolean;
 
-  @Prop()
+  @Column()
   title: string;
-  @Prop()
+
+  @Column()
   url: string;
-  @Prop()
+
+  @Column()
   imageUrl: string;
 
-  @Prop()
+  @Column()
   newsSite: string;
 
-  @Prop()
+  @Column()
   summary: string;
 
-  @Prop()
+  @Column()
   publishedAt: string;
 
-  @Prop()
+  @Column('json')
   launches: [
     {
       id: string;
@@ -31,7 +34,7 @@ export class Article {
     },
   ];
 
-  @Prop()
+  @Column('json')
   events: [
     {
       id: string;
@@ -39,5 +42,3 @@ export class Article {
     },
   ];
 }
-
-export const ArticleSchema = SchemaFactory.createForClass(Article);
