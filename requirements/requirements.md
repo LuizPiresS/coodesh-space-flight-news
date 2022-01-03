@@ -12,9 +12,9 @@ Nesse desafio você deverá desenvolver uma REST API que utilizará os dados do 
 
 - Trabalhar em um repositório em seu usuário ou utilizar o seu github pessoal (não esqueça de colocar no readme a referência a este challenge);
 - O projeto deverá ser desenvolvido com uma das tecnologias a seguir: **Node.js | C# .NET Core | PHP Laravel | RubyOnRails | Go Lang | Python FastAPI | SpringBoot Kotlin | Rust**;
-- Criar um banco de dados grátis **MongoDB** usando Atlas: https://www.mongodb.com/cloud/atlas ou banco de dados grátis **MySQL** no Heroku: https://elements.heroku.com/addons/jawsdb ou banco de dados grátis **Postgres** no Heroku: https://elements.heroku.com/addons/heroku-postgresql; (Recomendável usar Drivers oficiais para integração com o DB)
+- Criar um banco de dados grátis **MongoDB** usando Atlas: <https://www.mongodb.com/cloud/atlas> ou banco de dados grátis **MySQL** no Heroku: <https://elements.heroku.com/addons/jawsdb> ou banco de dados grátis **Postgres** no Heroku: https://elements.heroku.com/addons/heroku-postgresql; (Recomendável usar Drivers oficiais para integração com o DB)
 
-### Modelo de Dados:
+### Modelo de Dados
 
 Para a definição do modelo consulte a rota [GET]/articles da API, nesta rota você pode ver a estrutura como o exemplo:
 
@@ -43,7 +43,7 @@ Para a definição do modelo consulte a rota [GET]/articles da API, nesta rota v
   }
 ```
 
-### Back-End:
+### Back-End
 
 Nessa etapa você deverá construir uma API Restful com as melhores práticas de desenvolvimento, baseada na API [Space Flight News](https://api.spaceflightnewsapi.net/v3/documentation). Para isso você deve executar os passos a seguir:
 
@@ -56,13 +56,13 @@ Nessa etapa você deverá construir uma API Restful com as melhores práticas de
 - [x] `[PUT]/articles/{id}:` Atualizar um artigo baseado no `id`
 - [x] `[DELETE]/articles/{id}:` Remover um artigo baseado no `id`
 
-- [ ] **Obrigatório 2** - Para alimentar o seu banco de dados você deve criar um script para armazenar os dados de todos os artigos na Space Flight News API.
+- [x] **Obrigatório 2** - Para alimentar o seu banco de dados você deve criar um script para armazenar os dados de todos os artigos na Space Flight News API.
 
-- [ ] **Obrigatório 3** - Além disso você precisa desenvolver um CRON para ser executado diariamente às 9h e armazenar em seu os novos artigos ao seu banco de dados. (Para essa tarefa você poderá alterar o seu modelo de dados)
+- [x] **Obrigatório 3** - Além disso você precisa desenvolver um CRON para ser executado diariamente às 9h e armazenar em seu os novos artigos ao seu banco de dados. (Para essa tarefa você poderá alterar o seu modelo de dados)
 
-- [ ] **Diferencial 1** Configurar Docker no Projeto para facilitar o Deploy da equipe de DevOps;
+- [x] **Diferencial 1** Configurar Docker no Projeto para facilitar o Deploy da equipe de DevOps;
 
-- [ ] **Diferencial 2** Configurar um sistema de alerta se houver algum falha durante a sincronização dos artigos;
+- [x] **Diferencial 2** Configurar um sistema de alerta se houver algum falha durante a sincronização dos artigos;
 
 - [x] **Diferencial 3** Descrever a documentação da API utilizando o conceito de Open API 3.0;
 
@@ -70,14 +70,14 @@ Nessa etapa você deverá construir uma API Restful com as melhores práticas de
 
 ## Readme do Repositório
 
-- [ ] Deve conter o título do projeto
-- [ ] Uma descrição sobre o projeto em frase
-- [ ] Deve conter uma lista com linguagem, framework e/ou tecnologias usadas
-- [ ] Como instalar e usar o projeto (instruções)
-- [ ] Não esqueça o [.gitignore](https://www.toptal.com/developers/gitignore)
-- [ ] Se está usando github pessoal, referencie que é um challenge by coodesh:
+- [x] Deve conter o título do projeto
+- [x] Uma descrição sobre o projeto em frase
+- [x] Deve conter uma lista com linguagem, framework e/ou tecnologias usadas
+- [x] Como instalar e usar o projeto (instruções)
+- [x] Não esqueça o [.gitignore](https://www.toptal.com/developers/gitignore)
+- [x] Se está usando github pessoal, referencie que é um challenge by coodesh:
 
->  This is a challenge by [Coodesh](https://coodesh.com/)
+>This is a challenge by [Coodesh](https://coodesh.com/)
 
 ## Finalização e Instruções para a Apresentação
 
@@ -95,7 +95,4 @@ Avisar sobre a finalização e enviar para correção.
 
 ## Suporte
 
-Use o nosso canal no slack: http://bit.ly/32CuOMy para tirar dúvidas sobre o processo ou envie um e-mail para contato@coodesh.com.
-
-
-
+Use o nosso canal no slack: <http://bit.ly/32CuOMy> para tirar dúvidas sobre o processo ou envie um e-mail para contato@coodesh.com.

@@ -1,8 +1,5 @@
 # Back-end Challenge 🏅 2021 - Space Flight News
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
 <a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
 
 </p>
 
@@ -10,23 +7,42 @@
 
 [Backend Challenge Space Flight News 20210823](https://lab.coodesh.com/luizjesuzp/space-flight-news-20210823)
 
-## Installation
+REST API que utiliza os dados do projeto [Space Flight News](https://api.spaceflightnewsapi.net/v3/documentation), uma API pública com informações relacionadas a voos espaciais.
 
-```bash
-$ npm install
-```
+O projeto tem como objetivo criar a API permitindo assim a conexão de outras aplicações.
 
+## Technologies used
+
+**Framework:**
+
+- [NestJS](https://nestjs.com/)
+
+**Software quality**
+- [Husky](https://github.com/typicode/husky)
+- [git-commit-msg-linter](https://github.com/legend80s/commit-msg-linter)
+- [lint-staged](https://github.com/okonet/lint-staged)
+
+**Database**
+- [Postgres](https://www.postgresql.org/)
+
+**Deploy**
+- [Docker](https://www.docker.com/)
 ## Running the app
 
 ```bash
-# development
-$ npm run start
+$ docker-compose up
 
-# watch mode
-$ npm run start:dev
+Para criar o banco de dados acesse http://localhost:8080
+(as tabelas são criadas automaticamente quando o app for reiniciado)
+user: pguser
+password: pgpassword
 
-# production mode
-$ npm run start:prod
+create database:
+dbName: coodesh-space-flight-news
+
+Para popular o banco de dados com os artigos da api
+[Popular banco de dados](http://localhost:3000/api/v1/populate)
+Após isso o banco de dados se atualizará todos os dias as 9h da manhã
 ```
 
 ## Test
