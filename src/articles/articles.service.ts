@@ -45,7 +45,7 @@ export class ArticlesService {
     return await this.articleRepository.findOne(id);
   }
 
-  async update(id: string, updateArticleDto: UpdateArticleDto) {
+  async update(id: number, updateArticleDto: UpdateArticleDto) {
     return await this.articleRepository.update({ id }, updateArticleDto);
   }
 

@@ -47,7 +47,7 @@ export class ArticlesController {
   @ApiTags('coodesh')
   @ApiBody({ type: UpdateArticleDto })
   @Patch(':id')
-  update(@Param('id') id: string, @Body() updateArticleDto: UpdateArticleDto) {
+  update(@Param('id') id: number, @Body() updateArticleDto: UpdateArticleDto) {
     return this.articlesService.update(id, updateArticleDto);
   }
 

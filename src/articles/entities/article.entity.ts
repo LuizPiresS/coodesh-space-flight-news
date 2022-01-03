@@ -2,19 +2,15 @@ import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity()
 export class Article {
-  @PrimaryGeneratedColumn('uuid')
-  id: string;
+  @PrimaryGeneratedColumn()
+  id: number;
 
-  @Column()
   featured: boolean;
 
-  @Column()
   title: string;
 
-  @Column()
   url: string;
 
-  @Column()
   imageUrl: string;
 
   @Column()
