@@ -83,15 +83,15 @@ Nessa etapa você deverá construir uma API Restful com as melhores práticas de
 
 Avisar sobre a finalização e enviar para correção.
 
-- [ ] 1. Confira se você respondeu o Scorecard da Vaga que chegou no seu email;
-- [ ] 2. Confira se você respondeu o Mapeamento Comportamental que chegou no seu email;
-- [ ] 3. Acesse: [https://coodesh.com/challenges/review](https://coodesh.com/challenges/review);
-- [ ] 4. Adicione o repositório com a sua solução;
-- [ ] 5. Grave um vídeo, utilizando o botão na tela de solicitar revisão da Coodesh, com no máximo 5 minutos, com a apresentação do seu projeto. Foque em pontos obrigatórios e diferenciais quando for apresentar.
-- [ ] 6. Adicione o link da apresentação do seu projeto no README.md.
-- [ ] 7. Verifique se o Readme está bom e faça o commit final em seu repositório;
-- [ ] 8. Confira a vaga desejada;
-- [ ] 9. Envie e aguarde as instruções para seguir no processo. Sucesso e boa sorte. =)
+- [x] 1. Confira se você respondeu o Scorecard da Vaga que chegou no seu email;
+- [x] 2. Confira se você respondeu o Mapeamento Comportamental que chegou no seu email;
+- [x] 3. Acesse: [https://coodesh.com/challenges/review](https://coodesh.com/challenges/review);
+- [x] 4. Adicione o repositório com a sua solução;
+- [x] 5. Grave um vídeo, utilizando o botão na tela de solicitar revisão da Coodesh, com no máximo 5 minutos, com a apresentação do seu projeto. Foque em pontos obrigatórios e diferenciais quando for apresentar.
+- [x] 6. Adicione o link da apresentação do seu projeto no README.md.
+- [x] 7. Verifique se o Readme está bom e faça o commit final em seu repositório;
+- [x] 8. Confira a vaga desejada;
+- [x] 9. Envie e aguarde as instruções para seguir no processo. Sucesso e boa sorte. =)
 
 ## Suporte
 

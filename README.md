@@ -6,6 +6,7 @@
 ## Description
 
 [Backend Challenge Space Flight News 20210823](https://lab.coodesh.com/luizjesuzp/space-flight-news-20210823)
+[Vídeo apresentação](https://www.loom.com/embed/60b23f972a4a4973958ae538765f78d4)
 
 REST API que utiliza os dados do projeto [Space Flight News](https://api.spaceflightnewsapi.net/v3/documentation), uma API pública com informações relacionadas a voos espaciais.
 
@@ -33,7 +34,7 @@ O projeto tem como objetivo criar a API permitindo assim a conexão de outras ap
 $ docker-compose up
 
 Para criar o banco de dados acesse http://localhost:8080
-(as tabelas são criadas automaticamente quando o app for reiniciado)
+(as tabelas são criadas automaticamente quando o app for fizer a primeiro primeiro cadastro)
 user: pguser
 password: pgpassword
 
@@ -46,8 +47,9 @@ Após isso o banco de dados se atualizará todos os dias as 9h da manhã
 ```
 
 ## Test
-
+### [Swagger](http://localhost:3000/api/#/)
 ```bash
+
 # unit tests
 $ npm run test
 

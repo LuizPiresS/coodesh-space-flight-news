@@ -28,6 +28,7 @@ describe('ArticuleTes', () => {
     controller = module.get<ArticlesController>(ArticlesController);
     service = module.get<ArticlesService>(ArticlesService);
     mockData = {
+      id: 10,
       title: 'Update: NASA Plans Coverage of Webb Space Telescope Deployments',
       url: 'http://www.nasa.gov/press-release/update-nasa-plans-coverage-of-webb-space-telescope-deployments',
       imageUrl:
